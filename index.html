@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <title>Portfolio | Debajit Chakraborty</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Debajit</p>
+          <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn" onclick="window.open('./assets/My Resume.pdf')">
+            Download CV <i class="uil uil-file-alt"></i>
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- -------------- MAIN ---------------- -->
+      <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Debajit Chakraborty</span>
+            </div>
+            <div class="featured-name">
+              <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                Experienced frontend developer with a passion for creating
+                visually stunning and user-friendly websites.
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <button class="btn blue-btn">Hire Me</button>
+              <button
+                class="btn"
+                onclick="window.open('./assets/My Resume.pdf')"
+              >
+                Download CV <i class="uil uil-file-alt"></i>
+              </button>
+            </div>
+            <div class="social_icons">
+              <div class="icon">
+                <a href="https://www.linkedin.com/in/debajit-chakraborty">
+                  <i class="uil uil-linkedin-alt"></i
+                ></a>
+              </div>
+              <div class="icon">
+                <a href="https://github.com/debu100?tab=repositories"
+                  ><i class="uil uil-github-alt"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="assets/images/photo (1).jpg" alt="avatar" />
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+              <i class="uil uil-mouse-alt"></i>
+              <p>Scroll Down</p>
+            </a>
+          </div>
+        </section>
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>My introduction</h3>
+                <p>
+                  I am well-versed in HTML, CSS and JavaScript , and other
+                  cutting edge frameworks and libraries,which allows me to
+                  implement interactive features. Additionally, I have
+                  experirence working with content management systems (CMS) like
+                  WordPress.
+                </p>
+                <div class="about-btn">
+                  <button
+                    class="btn"
+                    onclick="window.open('./assets/My Resume.pdf')"
+                  >
+                    Download CV <i class="uil uil-import"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col skill-col">
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Frontend</h3>
+                </div>
+                <div class="skills-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>SASS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>jQuery</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Design</h3>
+                </div>
+                <div class="skills-list">
+                  <span>Adobe Photoshop</span>
+                  <span>Canva</span>
+                  <span>Figma</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Others</h3>
+                </div>
+                <div class="skills-list">
+                  <span>Github</span>
+                  <span>Digital Publishing</span>
+                  <span>Content Conversion</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- PROJECT BOX ---------------- -->
+
+        <section id="projects" class="hidden-content">
+          <div class="projects-heading">
+            <h3>Browse My Recent</h3>
+            <h2>Projects</h2>
+          </div>
+          <div class="container">
+            <ul class="projects-links">
+              <li class="project-link">
+                <a class="all" data-id="all" href="#all">All</a>
+              </li>
+              <li class="project-link">
+                <a class="html" data-id="html" href="#html">HTML/CSS</a>
+              </li>
+              <li class="project-link">
+                <a class="bs" data-id="bs" href="#bs">BOOTSTRAP</a>
+              </li>
+              <li class="project-link">
+                <a class="js" data-id="js" href="#js">JAVASCRIPT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="container projects-box all active-box">
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-1" />
+              <h2>Project One</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/netflix-clone"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/netflix-clone/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-2" />
+              <h2>Project Two</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/zomato-clone"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/zomato-clone/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-3" />
+              <h2>Project Three</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/herobiz"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/herobiz/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-4" />
+              <h2>Project Four</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Foodies"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Foodies/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-5" />
+              <h2>Project Five</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Tin_Dog"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Tin_Dog/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-6" />
+              <h2>Project Six</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Frontend-Bootcamp-Final"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Frontend-Bootcamp-Final/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-7" />
+              <h2>Project Seven</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Buildcon"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Buildcon/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-5" />
+              <h2>Project Eight</h2>
+              <div class="btn-projects-box">
+                <a
+                  href="https://github.com/debu100/Todo-List-Pure-Javascript-with-styling"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a
+                  href="https://debu100.github.io/Todo-List-Pure-Javascript-with-styling/"
+                >
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-6" />
+              <h2>Project Nine</h2>
+              <div class="btn-projects-box">
+                <a
+                  href="https://github.com/debu100/my-html-css-js-form-validation-pure-javascript"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a
+                  href=" https://debu100.github.io/my-html-css-js-form-validation-pure-javascript/"
+                >
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-7" />
+              <h2>Project Ten</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/calculator"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/calculator/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-8" />
+              <h2>Project Eleven</h2>
+              <div class="btn-projects-box">
+                <a
+                  href="https://github.com/debu100/background-color-generator-pure-javascript"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a
+                  href=" https://debu100.github.io/background-color-generator-pure-javascript/"
+                >
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-9" />
+              <h2>Project Twelve</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Input-Character-Counter"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/Input-Character-Counter/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container projects-box html">
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-1" />
+              <h2>Project One</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/netflix-clone"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/netflix-clone/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-2" />
+              <h2>Project Two</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/zomato-clone"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/zomato-clone/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container projects-box bs">
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-1" />
+              <h2>Project One</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/herobiz"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/herobiz/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-2" />
+              <h2>Project Two</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Foodies"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Foodies/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-3" />
+              <h2>Project Three</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Tin_Dog"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Tin_Dog/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-4" />
+              <h2>Project Four</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Frontend-Bootcamp-Final"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Frontend-Bootcamp-Final/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-5" />
+              <h2>Project Five</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Buildcon"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/Buildcon/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container projects-box js">
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-1" />
+              <h2>Project One</h2>
+              <div class="btn-projects-box">
+                <a
+                  href="https://github.com/debu100/Todo-List-Pure-Javascript-with-styling"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a
+                  href="https://debu100.github.io/Todo-List-Pure-Javascript-with-styling/"
+                >
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-2" />
+              <h2>Project Two</h2>
+              <div class="btn-projects-box">
+                <a
+                  href="https://github.com/debu100/my-html-css-js-form-validation-pure-javascript"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a
+                  href=" https://debu100.github.io/my-html-css-js-form-validation-pure-javascript/"
+                >
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-1.png" alt="project-3" />
+              <h2>Project Three</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/calculator"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href=" https://debu100.github.io/calculator/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-2.png" alt="project-4" />
+              <h2>Project Four</h2>
+              <div class="btn-projects-box">
+                <a
+                  href="https://github.com/debu100/background-color-generator-pure-javascript"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a
+                  href=" https://debu100.github.io/background-color-generator-pure-javascript/"
+                >
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <img src="./assets/images/project-3.png" alt="project-5" />
+              <h2>Project Five</h2>
+              <div class="btn-projects-box">
+                <a href="https://github.com/debu100/Input-Character-Counter"
+                  ><button class="btn btn-color-1">Github</button></a
+                >
+
+                <a href="https://debu100.github.io/Input-Character-Counter/">
+                  <button class="btn btn-color-2">Live Demo</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p>
+                  <i class="uil uil-envelope"></i> Email: debuc100@gmail.com
+                </p>
+                <p><i class="uil uil-phone"></i> Tel: +91 9163883143</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" placeholder="Name" />
+                  <input type="text" class="input-field" placeholder="Email" />
+                </div>
+                <div class="text-area">
+                  <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="form-button">
+                  <button class="btn">
+                    Send <i class="uil uil-message"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- --------------- FOOTER --------------- -->
+      <footer>
+        <div class="top-footer">
+          <p>Debajit Chakraborty .</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/debajit-chakraborty">
+              <i class="uil uil-linkedin-alt"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="https://github.com/debu100?tab=repositories"
+              ><i class="uil uil-github-alt"></i
+            ></a>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="#home" style="text-decoration: none"
+              >Debajit Chakraborty</a
+            >
+            - All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
