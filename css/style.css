@@ -234,7 +234,7 @@ nav {
 .image {
   margin: auto 0;
   width: 500px;
-  height: 500px;
+  aspect-ratio: 1 / 1;
   border-radius: 55% 45% 55% 45%;
   overflow: hidden;
   animation: imgFloat 7s ease-in-out infinite;
