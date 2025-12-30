@@ -229,11 +229,11 @@ nav {
   justify-content: right;
   align-content: center;
   min-height: 90vh;
-  width: 70%;
+  width: 50%;
 }
 .image {
   margin: auto 0;
-  width: 500px;
+  width: 400px;
   aspect-ratio: 1 / 1;
   border-radius: 55% 45% 55% 45%;
   overflow: hidden;
